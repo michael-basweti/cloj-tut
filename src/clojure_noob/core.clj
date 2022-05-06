@@ -1,5 +1,10 @@
 (ns clojure-noob.core
   (:gen-class))
+;new function
+(defn hello
+  "I'm trying to do a whole lot ... now."
+  [& args]
+  (println "I try"))
 
 (defn -main
   "I don't do a whole lot ... yet."
@@ -32,11 +37,10 @@
 ;  usage of get-in in accessing nested values
   (println (get-in hmap [:added_info :school]))
 
-  ;  (println zeus)
+  (println zeus)
 
-;  (defn greeting
-;    "this is a greeting"
-;    [& args]
-;    (println "Joyie say, How are you doing??")
-;    )
+;  call function
+  (hello)
+
+;  vectors
   )
