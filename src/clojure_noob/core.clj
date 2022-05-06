@@ -19,7 +19,7 @@
     (println Aqua)
     )
 
-  (def hmap {:firstname "Mike" :lastname "Basweti" :thirdname "Alex"})
+  (def hmap {:firstname "Mike" :lastname "Basweti" :thirdname "Alex" :added_info {:dob "2nd Feb" :school "dropout"}})
   (def examplemap (hash-map :subject1 "Math" :subject2 "Physics"))
   (println hmap)
   (println examplemap)
@@ -29,6 +29,8 @@
 ; get a key that doesn't exist, returns `nil`
   (println (get hmap :lastname2))
 ;  keyword example :thirdname
+;  usage of get-in in accessing nested values
+  (println (get-in hmap [:added_info :school]))
 
   ;  (println zeus)
 
