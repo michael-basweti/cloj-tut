@@ -43,4 +43,13 @@
   (hello)
 
 ;  vectors
+  (def exampvector [34 89 90 55])
+;  get second value from vector
+  (println (get exampvector 1))
+  (println (get exampvector 3))
+
+  (def createVector (vector "Mike" "Basweti"))
+  (println (get createVector 1))
+  (println (conj createVector "hello"))
+  (println createVector)
   )
