@@ -50,6 +50,29 @@
 
   (def createVector (vector "Mike" "Basweti"))
   (println (get createVector 1))
+;  element added at the end
   (println (conj createVector "hello"))
   (println createVector)
+;  lists
+  (def listexamp '(4 7 9 12))
+  (println listexamp)
+;  get value
+  (println (nth listexamp 2))
+;  creating a list with `list` function
+  (def exlist (list 78 56 34 29 98))
+  (println (nth exlist 2))
+;  conjure in list, item added at the beginning
+  (println (conj exlist 77))
+;  sets
+;  collection of unique values
+  (def exhashsest #{"sasa" "hello" 34 9.6})
+  (println exhashsest)
+;  create using `hash-set` function
+  (def create-hasset (hash-set 2 4 8 7 3 2))
+  (println create-hasset)
+;  convert list int set (set [2 4 8 3 2])
+;  contains?
+  (println (contains? create-hasset 2))
+;  get
+  (println (get create-hasset 4))
   )
